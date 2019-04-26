@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homage To Square</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="title">Homage To The Square</h1>
+    <div style="text-align:center;">
+      <button onclick="scrollInto('square1');">Square 1</button>
+      <button onclick="scrollInto('square2');">Square 2</button>
+      <button onclick="scrollInto('square3');">Square 3</button>
+      <button onclick="scrollInto('square4');">Square 4</button>
+      <button class="stick" onclick="scrollInto('title');">To Top</button>
+    </div>
+    <div id="square1" class="container-600 aqua floatLeft">
+      <h2>Square 1</h2>
+      <div class="container-400 green floatLeft">
+        <div class="container-200 yellow floatleft"></div>
+      </div>
+    </div>
+    <div id="square2" class="container-600 red floatRight">
+      <h2>Square 2</h2>
+      <div class="container-500 orange floatRight margin50">
+        <div class="container-400 yellow floatRight margin50">
+          <div class="container-300 green floatRight margin50">
+            <div class="container-200 aqua floatRight margin50">
+              <div class="container-100 violet floatRight margin50"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="square3" class="container-600 green floatLeft">
+      <h2>Square 3</h2>
+      <div class="container-500 aqua floatRight bottomSit100">
+        <div class="container-300 violet bottomSit200">
+          <div class="container-100 darkgray bottomSit200 floatLeft"></div>
+        </div>
+      </div>
+    </div>
+    <div id="square4" class="container-600 red floatRight">
+      <h2>Square 4</h2>
+      <div class="container-400 orange floatRight margin100">
+        <div class="container-200 yellow floatRight margin100"></div>
+      </div>
+    </div>
+    <script>
+      function scrollInto(id) {
+        document.getElementById(id).scrollIntoView();
+      }
+    </script>
+  </body>
+</html>
